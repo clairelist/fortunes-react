@@ -1,5 +1,6 @@
 import FortuneGetter from './components/FortuneGetter';
 import './App.css';
+//current push
 
 function App() {
   return (
