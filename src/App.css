@@ -16,3 +16,7 @@
 .App-link {
   color: #61dafb;
 }
+
+#click-me:hover {
+  color: silver;
+}

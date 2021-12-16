@@ -7,9 +7,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        <p>
-          Hello from inside of App !
-        </p>
+        <h1>
+          This is a fortune-telling machine. Please treat it with the respect it deserves.
+        </h1>
         <FortuneGetter />
       </header>
      
