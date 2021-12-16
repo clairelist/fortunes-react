@@ -20,7 +20,7 @@ function getRandomInt(min, max) {
       
   }
 
-const fortuneArr = ["yes, definitely", "you can rely on it.", "Without a doubt.", "most likely.", "hmm... I'm not sure!", "yikes. Nope.", "try again.", "very doubtful."];
+const fortuneArr = ["Yes, definitely", "You can rely on it.", "Without a doubt.", "Most likely.", "Hmm... I'm not sure!", "Yikes. Nope.", "...Try again.", "Very doubtful."];
 
 const FortuneGetter=()=>{
       //DATA section:: needful | initialize state as array of fortunes
