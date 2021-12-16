@@ -1,4 +1,4 @@
-
+import FortuneGetter from './components/FortuneGetter';
 import './App.css';
 
 function App() {
@@ -9,8 +9,9 @@ function App() {
         <p>
           Hello from inside of App !
         </p>
-        
+        <FortuneGetter />
       </header>
+     
     </div>
   );
 }
