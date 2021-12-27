@@ -47,7 +47,26 @@ class Login extends React.component{
         return(
             <div className='login-card'>
                 <h3>Please LOG IN.</h3>
+
+                <form className='login-form' onSubmit={this.login}>
+          <input
+            type="text"
+            name="username"
+            value={this.state.credentials.username}
+            onChange={this.handleChange}
+          />
+          <input
+            type="password"
+            name="password"
+            value={this.state.credentials.password}
+            onChange={this.handleChange}
+          />
+          <button id='login-button'>Log me IN!</button>
+        </form>
+
             </div>
-        )
+        );
     }
 }
+
+export default Login;

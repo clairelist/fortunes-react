@@ -1,15 +1,13 @@
 import FortuneGetter from './components/FortuneGetter';
 import './App.css';
-//current push
+import Login from './components/Login';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         
-        <h1>
-          This is a fortune-telling machine. Please treat it with the respect it deserves.
-        </h1>
         <FortuneGetter />
       </header>
      
