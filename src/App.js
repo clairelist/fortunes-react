@@ -2,7 +2,7 @@ import FortuneGetter from './components/FortuneGetter';
 import './App.css';
 //import Login from './components/Login';
 import Blog from './components/Blog';
-import {  Route, Link, Switch } from 'react-router-dom';
+import {  Route, Link } from 'react-router-dom';
 
 function App() {
   return (
