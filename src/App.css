@@ -19,6 +19,5 @@
 
 #click-me:hover {
   color: silver;
-  /* user-select: none; currently supported by FIREFOX, CHROME, EDGE, OPERA  */
   user-select: none;
 }

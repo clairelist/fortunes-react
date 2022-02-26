@@ -20,7 +20,7 @@ function getRandomInt(min, max) {
       
   }
 
-const fortuneArr = ["Yes, definitely", "You can rely on it.", "Without a doubt.", "Most likely.", "Hmm... I'm not sure!", "Yikes. Nope.", "...Try again.", "Very doubtful."];
+const fortuneArr = ["Yes, definitely", "You can rely on it.", "Without a doubt.", "Most likely.", "Hmm... I'm not sure!", "Yikes. Nope.", "...Try again.", "Very doubtful.","The wheel is turning the Machine.","What did you think would happen, exactly?","Don't try that again.","You cannot kill me in any way that matters."];
 
 const FortuneGetter=()=>{
       //DATA section:: needful | initialize state as array of fortunes
@@ -34,9 +34,14 @@ const FortuneGetter=()=>{
 
       return(
           <div className='fortune'>
+              <h1>
+          This is a fortune-telling machine. Please treat it with the respect it deserves.
+             </h1>
               <span id='click-me' onClick={handleClick}>Click me to get a new fortune!</span>
               <h2>The Machine Says:</h2>
-              <p>{!fortune ? 'The Machine doesn`t like you at all today, huh.' : fortune}</p>
+
+              <p>{!fortune ? 'Looks like the machine doesn`t like you very much at all today!' : fortune}</p>
+
           </div>
       )
   }

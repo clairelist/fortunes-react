@@ -1,18 +1,24 @@
 import FortuneGetter from './components/FortuneGetter';
 import './App.css';
-//current push
+//import Login from './components/Login';
+import Blog from './components/Blog';
+import {  Route, Link } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         
-        <h1>
-          This is a fortune-telling machine. Please treat it with the respect it deserves.
-        </h1>
         <FortuneGetter />
       </header>
-     
+     <div className='nav-wrapper'>
+       <nav>
+         <Link to='/blog'>Click ME to go to the BLOG!</Link>
+       </nav>
+     </div>
+     <Route exact path='/blog'>
+       <Blog />
+     </Route>
     </div>
   );
 }
