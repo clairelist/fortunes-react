@@ -39,8 +39,7 @@ const FortuneGetter=()=>{
              </h1>
               <span id='click-me' onClick={handleClick}>Click me to get a new fortune!</span>
               <h2>The Machine Says:</h2>
-              <p>{fortune}</p>
-              {fortune && <p>Dang, the machine doesn't like you very much at all today!</p>}
+              <p>{!fortune ? 'Looks like the machine doesn`t like you very much at all today!' : fortune}</p>
           </div>
       )
   }
