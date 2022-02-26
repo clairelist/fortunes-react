@@ -24,7 +24,7 @@ const fortuneArr = ["Yes, definitely", "You can rely on it.", "Without a doubt."
 
 const FortuneGetter=()=>{
       //DATA section:: needful | initialize state as array of fortunes
-      const [fortune,setFortune] = useState([]);
+      const [fortune,setFortune] = useState('');
 
       //logic will look something like : invoke eightBall2, then set the returned index as our state, then display that in component
 
@@ -36,7 +36,7 @@ const FortuneGetter=()=>{
           <div className='fortune'>
               <span id='click-me' onClick={handleClick}>Click me to get a new fortune!</span>
               <h2>The Machine Says:</h2>
-              <p>{fortune}</p>
+              <p>{!fortune ? 'The Machine doesn`t like you at all today, huh.' : fortune}</p>
           </div>
       )
   }
